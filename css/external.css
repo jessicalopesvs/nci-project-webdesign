@@ -1,10 +1,15 @@
-nav{
+html,body{
     font-family: 'Montserrat', sans-serif;
+}
+
+nav{
     background-color: green;
     color: white;
+    font-size: 16px;
 }
 
 footer{
     background-color: green;
+    font-size: 10px;
 }
 

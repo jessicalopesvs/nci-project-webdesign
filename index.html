@@ -68,7 +68,7 @@
                 <a class="nav-link text-white" href="#">FAQs</a>
             </li>
             <li class="nav-item">
-                <button type="button" class="btn text-white" href="#">
+                <button type="button" class="btn btn-ouline text-white" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket" viewBox="0 0 16 16">
                         <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5ZM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5h-13Z"/>
                     </svg>
@@ -79,28 +79,102 @@
     </div>
 </nav>
 
+<main>
 
-<div class="container">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+  
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p>Some representative placeholder content for the first slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+  
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+  
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+  
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+        </div>
 
-    <!--COLOCAR CONTEÚDO AQUI -->
-    <h1> Hello World</h1>
+        <hr>
 
-</div>
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top fixed-bottom">
-    <p class="col-md-4 mb-0 text-white">©2022 Guinness Park</p>
+      </div> <!-- /container -->
+</main>  
 
-    <a href="#"
-       class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-        <img class="bi me-2" width="25%" src="img/guinness-logo.svg" alt="logo-footer">
-    </a>
+<footer class="nav-footer text-center text-white fixed-bottom">
+    <!-- Grid container -->
+    <div class="container p-2 pb-0">
+      <!-- Section: Social media butttons -->
+      <section class="mb-0">
+        <a class="btn text-white" href="https://www.facebook.com/" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Facebook']);"><span class="fab fa-facebook text-white"></span></a>
+        <a class="btn text-white" href="https://www.twitter.com/" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Twitter']);"><span class="fab fa-twitter text-white"></span></a>
+        <a class="btn text-white" href="https://www.instagram.com" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Instagram']);"><span class="fab fa-instagram text-white"></span></a>
+      </section>
+    </div>  
 
-    <ul class="nav col-md-4 justify-content-end">
-        <li><a href="https://www.facebook.com/" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Facebook']);"><span class="fab fa-facebook text-white"></span></a></li>
-        <li><a href="https://www.twitter.com/" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Twitter']);"><span class="fab fa-twitter text-white"></span></a></li>
-        <li><a href="https://www.instagram.com" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Instagram']);"><span class="fab fa-instagram text-white"></span></a></li>
-    </ul>
-</footer>
+    <!-- Copyright -->
+    <div class="p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+        <p class="footer-p"> © 2022 Guinness Park</p>
+    </div>
 
+  </footer>
 
 
 
