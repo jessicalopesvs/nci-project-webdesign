@@ -5,22 +5,21 @@ html *{
 }
 
 /*Navigation bar styling */
-nav{
-    background-color: green;
+header{
+    background-color: #64B8A1;
     color: white;
     font-size: 16px;
 }
 
 /*Footer styling */
 footer{
-    background-color: green;
+    background-color: #FED523;
     font-size: 10px;
 }
 
 /*Back to the top button styling*/
 .back-to-top{
     position: fixed;
-
     bottom: 100px;
     right: 50px;
 }
@@ -29,19 +28,17 @@ footer{
 #contact-heading h2{
     padding: 30px;
 
-
+}
 
 /*Titles fonts*/
 
-h1{
-    font-family: 'Montserrat', sans-serif;
-    color: black;
+h1 {
+    color: #D20001 ;
     text-align: center;
 }
 
 h2{
-    font-family: 'Montserrat', sans-serif;
-    color: #464444;
+    color: #F26400;
     text-align: center;
 }
 
@@ -55,7 +52,4 @@ h2{
 #faq{
     margin: 5%;
 }
-
-
-
 
