@@ -1,19 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <!--Responsive meta tag-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Style css-->
     <link href="../css/external.css" rel="stylesheet" type="text/css">
 
-    <!-- Bootstrap CSS and validator -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <!--JS script-->
-    <script src="../js/script.js" type="javascript" rel="script"></script>
 
     <!--Font Awesome Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -42,41 +38,43 @@
             <a class="navbar-brand" href="#">        
                 <img id="logo" class="bi me-2" width="100" height="100" src="../img/guinness-logo.svg" alt="logo-nav-bar">
             </a>
+            <!--Toggler-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!--Collapsed menu-->
+            <!--Bootstrap collapsed menu-->
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="../index.html" >Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-white" href="index.html" >Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="about.html">About us</a>
+                        <a class="nav-link text-white" href="common/about.html">About us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="attractions.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="common/attractions.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Attractions
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="attractions.html#fartChamber">Guinness Fart Chamber</a>
-                            <a class="dropdown-item" href="attractions.html#pintman">Pintman Express</a>
-                            <a class="dropdown-item" href="attractions.html#gForce">Split the G-Force</a>
-                            <a class="dropdown-item" href="attractions.html#gLake">Guinness Lake</a>
-                            <a class="dropdown-item" href="attractions.html#arthur">Arthur Meet n' Greet</a>
-                            <a class="dropdown-item" href="attractions.html#zoo">Open Gate Zoo-Ery</a>
-                            <a class="dropdown-item" href="attractions.html#babyZone">Pint Baby Zone</a>
+                            <a class="dropdown-item" href="common/attractions.html#fartChamber">Guinness Fart Chamber</a>
+                            <a class="dropdown-item" href="common/attractions.html#pintman">Pintman Express</a>
+                            <a class="dropdown-item" href="common/attractions.html#gForce">Split the G-Force</a>
+                            <a class="dropdown-item" href="common/attractions.html#gLake">Guinness Lake</a>
+                            <a class="dropdown-item" href="common/attractions.html#arthur">Arthur Meet n' Greet</a>
+                            <a class="dropdown-item" href="common/attractions.html#zoo">Open Gate Zoo-Ery</a>
+                            <a class="dropdown-item" href="common/attractions.html#babyZone">Pint Baby Zone</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#=location.html">Location</a>
+                        <a class="nav-link text-white" href="common/contact.html">Contact us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="faqs.html">FAQs</a>
+                        <a class="nav-link text-white" href="common/faqs.html">FAQs</a>
                     </li>
+                    <!--Boootstrap ticket button-->
                     <li class="nav-item">
-                        <button type="button" class="btn btn-success text-black" href="tickets.html">
+                        <button type="button" class="btn btn-success text-black" href="common/tickets.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket" viewBox="0 0 16 16">
                                 <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5ZM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5h-13Z"/>
                             </svg>
@@ -87,24 +85,27 @@
             </div><!--navbar-nav-->
         </nav>
     </header>
-
+   
     <!--Main content-->
     <main>
-        <div class="container">
-            <div class="row">
 
-                <!--Row 1-->
+        <!--Bootstrap container-->
+        <div class="container">
+            <!--Bootstrap row-->
+            <div class="row">
+                <!--Bootstrap grid -->
                 <div class="col-md-12 text-center" id="contact-heading">
                     <h2>Contact Us</h2>
                 </div>
-
-                <!--Row 2-->
+                <!--Bootstrap grid -->
                 <div class="contact-wrapper col-md-6">
                     <h3>Contact form </h3>
                     <form id="contactForm" name="contactForm">
                         
                         <!--Name-->
+                        <!--Bootstrap grid -->
                         <div class="col-md-12">
+                            <!--Bootstrap form-->
                             <div class="form-group">
                                 <label class="label" for="name">Full Name</label>
                                 <input type="text" class="form-control" name="name" id="name" placeholder="Full Name" required>
@@ -112,7 +113,9 @@
                         </div>
 
                         <!--Email-->
+                        <!--Bootstrap grid -->
                         <div class="col-md-12">
+                            <!--Bootstrap form-->
                             <div class="form-group">
                                 <label class="label" for="email">Email Address</label>
                                     <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
@@ -120,7 +123,9 @@
                         </div>
 
                         <!--Subject-->
+                        <!--Bootstrap grid -->
                         <div class="col-md-12">
+                            <!--Bootstrap form-->
                             <div class="form-group">
                                 <label class="label" for="subject">Subject</label>
                                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
@@ -128,15 +133,19 @@
                         </div>
 
                         <!--Message-->
+                        <!--Bootstrap grid -->
                         <div class="col-md-12">
+                            <!--Bootstrap form-->
                             <div class="form-group">
                                 <label class="label" for="#">Message</label>
                                 <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message" required></textarea>
                             </div>
                         </div>
                                                 
-                        <!--Submit-->
+                        <!--Submit button-->
+                        <!--Bootstrap grid -->
                         <div class="col-md-12">
+                            <!--Bootstrap form-->
                             <div class="form-group">
                                 <input type="submit" value="Send Message" class="btn btn-outline-success">
                                 <div class="submit"></div>
@@ -146,9 +155,10 @@
                     </form>
                 </div><!--form-wrapper-->
 
-                <!--Row 3-->
+                <!--Google maps-->
+                <!--Bootstrap grid -->
                 <div class="col-md-6">
-                    <div id="address">
+                    <div id="gMaps">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2024.9678867901985!2d-6.460101720228864!3d53.54537576131236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48676a949ad1dbf9%3A0x2be202d1e104a45c!2sTayto%20Park!5e1!3m2!1sen!2sie!4v1649929433356!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
                     </div>
                 </div>
@@ -157,15 +167,15 @@
         </div><!--container-->
     </main>
 
-    <!--Back to top button-->
-    <a id="back-to-top" href="#" class="btn btn-success btn-floating back-to-top pull-right" role="button"><i class="fas fa-chevron-up"></i></a>
+    <!--Bootstrap & Font Awesome Back to top button-->
+    <a id="back-to-top" href="#" class="btn btn-success back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
 
 
-    <!--Footer-->
-    <footer class="nav-footer text-center text-white bottom">
-        <!-- Grid container -->
-        <div class="container p-2 pb-0">
-        <!-- Section: Social media butttons -->
+    <!--Bootrap Footer-->
+    <footer class="footer mt-auto py-0  text-center text-white bottom">
+        <!-- Bootstrap container -->
+        <div class="container p-2">
+        <!-- Bootstrap grid & Social media butttons -->
         <section class="mb-0">
             <a class="btn text-white" href="https://www.facebook.com/" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Facebook']);"><span class="fab fa-facebook text-white"></span></a>
             <a class="btn text-white" href="https://www.twitter.com/" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Twitter']);"><span class="fab fa-twitter text-white"></span></a>
@@ -173,11 +183,11 @@
         </section>
         </div>  
 
-        <!-- Copyright -->
+        <!--Copyright-->
+        <!-- Bootsrap grid -->
         <div class="p-2" style="background-color: rgba(0, 0, 0, 0.2);">
-            <p class="footer-p"> © 2022 Guinness Park</p>
+            <p class="footer-p"> © 2022 Guinness Park</p> 
         </div>
-
     </footer>
 
     <!--jQuery, Popper and Bootstrap JS -->
@@ -186,6 +196,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     
-
 </body>
 </html>

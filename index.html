@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -10,8 +10,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!--JS script-->
-    <script src="../js/script.js" type="javascript" rel="script"></script>
 
     <!--Font Awesome Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -40,11 +38,12 @@
             <a class="navbar-brand" href="#">        
                 <img id="logo" class="bi me-2" width="100" height="100" src="img/guinness-logo.svg" alt="logo-nav-bar">
             </a>
+            <!--Toggler-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!--Collapsed menu-->
+            <!--Bootstrap collapsed menu-->
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
@@ -73,6 +72,7 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="common/faqs.html">FAQs</a>
                     </li>
+                    <!--Boootstrap ticket button-->
                     <li class="nav-item">
                         <button type="button" class="btn btn-success text-black" href="common/tickets.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket" viewBox="0 0 16 16">
@@ -134,7 +134,7 @@
         <!--Bootstrap container-->
         <div class="container">
 
-            <!--Bootstrap row 1-->
+            <!--Bootstrap row-->
             <div class="row" id="row-experience">
                 <!--Bootstrap grid-->
                 <div class="col-md-12 p-5">
@@ -144,37 +144,44 @@
                 </div>
             </div><!--row 1-->
 
-            <!--Bootstrap row 2-->
+            <!--Bootstrap row-->
             <div class="row" id="attractions-gallery">
+                <!--Bootstrap grid-->
                 <div class="col-md-4 p-1">
                     <a class="pintman" href="common/attractions.html#pintman"><img class="w-100" src="img/pintman.png">
                     <p class="carousel-caption">Pintman Express</p></a>
                 </div>
+                <!--Bootstrap grid-->
                 <div class="col-md-4 p-1">
                     <a class="fartChamber" href="common/attractions.html#fartChamber"><img class="w-100" src="img/pintman.png" >
                     <p class="carousel-caption">Guinness Fart Chamber</p></a>
                 </div>
+                <!--Bootstrap grid-->
                 <div class="col-md-4 p-1">
                     <a class="gLake" href="common/attractions.html#gLake"><img class="w-100" src="img/pintman.png" >
                     <p class="carousel-caption">Guinness Lake</p></a>
                 </div>
               </div>
 
-              <!--Bootstrap Row 3-->
+              <!--Bootstrap Row-->
               <div class="row" id="attractions-gallery">
+                  <!--Bootstrap grid-->
                 <div class="col-md-3 p-1">
                     <a class="gForce" href="common/attractions.html#gForce"><img class="w-100" src="img/pintman.png">
                     <p class="carousel-caption">Split the G-Force</p></a>
                 </div>
                 <div class="col-md-3 p-1">
+                    <!--Bootstrap grid-->
                     <a class="pintman" href="common/attractions.html#arthur"><img class="w-100" src="img/pintman.png">
                   <p class="carousel-caption">Arthur Meet n' Greet</p></a>
                 </div>
                 <div class="col-md-3 p-1">
+                    <!--Bootstrap grid-->
                     <a class="pintman" href="common/attractions.html#zoo"><img class="w-100" src="img/pintman.png">
                     <p class="carousel-caption">Open Gate Zoo Entry</p></a>
                 </div>
                 <div class="col-md-3 p-1">
+                    <!--Bootstrap grid-->
                     <a class="pintman" href="common/attractions.html#fartChamber"><img class="w-100" src="img/pintman.png">
                     <p class="carousel-caption">Pint Baby Zone</p></a>
                 </div>
@@ -183,15 +190,18 @@
             <hr><!--thematic break-->
         </div><!--container-->
 
+        <!--Bootstrap container-->
         <div class="container">
+            <!--Bootstrap grid-->
             <div class="row" id="row-experience">
                 <!--Bootstrap grid-->
                 <div class="col-md-12">
+                    <!--Bootstrap grid-->
                     <div class="col-md-12 text-center p-5">
                         <h1>Buy tickets online</h1>
                 </div>
 
-
+            <!--Bootstrap row-->
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
                 <div class="col">
                   <div class="card mb-4 rounded-3 shadow-sm">
@@ -251,28 +261,27 @@
     <!--Back to top button-->
     <a id="back-to-top" href="#" class="btn btn-success btn-floating back-to-top pull-right" role="button"><i class="fas fa-chevron-up"></i></a>
 
-    <!--Footer-->
-    <footer class="nav-footer text-center text-white bottom">
-        <!-- Grid container -->
-        <div class="container p-2 pb-0">
-        <!-- Section: Social media butttons -->
-        <section class="mb-0">
+    <!--Bootrap Footer-->
+    <footer class="footer mt-auto py-0  text-center text-white bottom">
+        <!-- Bootstrap container -->
+        <div class="container p-0">
+        <!-- Bootstrap grid & Social media butttons -->
+        <section class="mb-0 p-2">
             <a class="btn text-white" href="https://www.facebook.com/" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Facebook']);"><span class="fab fa-facebook text-white"></span></a>
             <a class="btn text-white" href="https://www.twitter.com/" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Twitter']);"><span class="fab fa-twitter text-white"></span></a>
             <a class="btn text-white" href="https://www.instagram.com" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Instagram']);"><span class="fab fa-instagram text-white"></span></a>
         </section>
         </div>  
 
-        <!-- Copyright -->
+        <!--Copyright-->
+        <!-- Bootsrap grid -->
         <div class="p-2" style="background-color: rgba(0, 0, 0, 0.2);">
-            <p class="footer-p"> © 2022 Guinness Park</p>
+            <p class="footer-p"> © 2022 Guinness Park</p> 
         </div>
     </footer>
 
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
