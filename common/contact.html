@@ -9,7 +9,7 @@
     <link href="../css/external.css" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!--Font Awesome Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -29,62 +29,25 @@
 
 <body>
 
-    <!--Header-->
-    <header>
+    <!--Bootstrap navbar-->
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">Simple header</span>
+        </a>
 
-        <!-- Navigation Bar -->
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <nav class="navbar navbar-expand-sm">
-            <a class="navbar-brand" href="#">        
-                <img id="logo" class="bi me-2" width="100" height="100" src="../img/guinness-logo.svg" alt="logo-nav-bar">
-            </a>
-            <!--Toggler-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!--Bootstrap collapsed menu-->
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link text-white" href="index.html" >Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="common/about.html">About us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="common/attractions.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Attractions
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="common/attractions.html#fartChamber">Guinness Fart Chamber</a>
-                            <a class="dropdown-item" href="common/attractions.html#pintman">Pintman Express</a>
-                            <a class="dropdown-item" href="common/attractions.html#gForce">Split the G-Force</a>
-                            <a class="dropdown-item" href="common/attractions.html#gLake">Guinness Lake</a>
-                            <a class="dropdown-item" href="common/attractions.html#arthur">Arthur Meet n' Greet</a>
-                            <a class="dropdown-item" href="common/attractions.html#zoo">Open Gate Zoo-Ery</a>
-                            <a class="dropdown-item" href="common/attractions.html#babyZone">Pint Baby Zone</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="common/contact.html">Contact us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="common/faqs.html">FAQs</a>
-                    </li>
-                    <!--Boootstrap ticket button-->
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-success text-black" href="common/tickets.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket" viewBox="0 0 16 16">
-                                <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5ZM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5h-13Z"/>
-                            </svg>
-                            Tickets
-                        </button>
-                    </li>
-                </ul>
-            </div><!--navbar-nav-->
-        </nav>
+        <!--Botstrap nav-pills-->
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
     </header>
+
    
     <!--Main content-->
     <main>
@@ -167,9 +130,6 @@
         </div><!--container-->
     </main>
 
-    <!--Bootstrap & Font Awesome Back to top button-->
-    <a id="back-to-top" href="#" class="btn btn-success back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
-
 
     <!--Bootrap Footer-->
     <footer class="footer mt-auto py-0  text-center text-white bottom">
@@ -190,10 +150,12 @@
         </div>
     </footer>
 
-    <!--jQuery, Popper and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    
 
     
 </body>
