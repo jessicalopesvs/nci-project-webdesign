@@ -4,6 +4,11 @@ html *{
     font-family: 'Montserrat', sans-serif;
 }
 
+body{
+    margin: 0px;
+    padding: 0px;
+  }
+
 /*Navigation bar styling */
 header{
     background-color: #64B8A1;
@@ -53,3 +58,6 @@ h2{
     margin: 5%;
 }
 
+main{
+    margin-top: -25px;
+}
