@@ -29,6 +29,31 @@ footer{
 #contact-heading h2{
     padding: 30px;
 
+
+
+/*Titles fonts*/
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #464444;
+    text-align: center;
+}
+
+/*Header style*/
+
+#top-title{
+    /*background-color: rgba(100, 184, 161, 0.58);*/
+    padding: 6%;
+}
+
+#faq{
+    margin: 5%;
 }
 
 
