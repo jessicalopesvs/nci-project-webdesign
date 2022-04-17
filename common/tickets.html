@@ -13,8 +13,8 @@
     <link href="../css/external.css" rel="stylesheet" type="text/css">
 
     <!--Individual CSS-->
-<!--    <link href="../css/jessica.css" rel="stylesheet" type="text/css">-->
-    <link href="../css/julia.css" rel="stylesheet" type="text/css">
+    <link href="../css/jessica.css" rel="stylesheet" type="text/css">
+    <!--    <link href="../css/julia.css" rel="stylesheet" type="text/css">-->
 
     <!-- JAVA SCRIPT VALIDATION -->
     <script src="../js/script.js" type="text/javascript"></script>
@@ -28,7 +28,7 @@
     <body>
 
 
-<!--NAV BAR BOOTSTRAP-->
+    <!--NAV BAR BOOTSTRAP-->
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
             <svg class="bi me-2" width="40" height="32">
@@ -38,7 +38,8 @@
         </a>
 
         <ul class="nav nav-pills">
-            <li class="nav-item "><a href="https://jessicalopesvs.github.io/project/" class="nav-link text-grey">Home</a></li>
+            <li class="nav-item "><a href="https://jessicalopesvs.github.io/project/"
+                                     class="nav-link text-grey">Home</a></li>
             <li class="nav-item "><a href="../common/attractions.html" class="nav-link text-light">Atttractions</a></li>
             <li class="nav-item"><a href="../common/faq.html" class="nav-link">FAQs</a></li>
             <li class="nav-item"><a href="../common/contact.html" class="nav-link">Contact Us</a></li>
@@ -46,7 +47,7 @@
         </ul>
 
     </header>
-<!--End of nav bar-->
+    <!--End of nav bar-->
 
 
     <main>
@@ -63,18 +64,24 @@
                         <td>
                             <h3>Login</h3>
 
-                        <label for="username"> Username <br/> </label><br/>
-                            <input id="username"  name="username" onchange="ValidateUsername()" type="text"
+                            <label for="username"> Username <br/> </label><br/>
+                            <input id="username" name="username" onchange="ValidateUsername()" type="text"
                                    value="">
-                            <p class="alert" id="usrmsg"></p>
-                            <p class="alert" id="usrmsg2"></p>
+                            <!--alerts-->
+                            <div class="alerts">
+                                <div id="usrmsg"></div>
+                                <div id="usrmsg2"></div>
+                            </div>
                         </td>
                     </tr>
                     <tr>
                         <td><label for="password"> Password <br/> </label><br/>
-                            <input id="password" maxlength="9" minlength="9" name="password" onchange="ValidatePassword()" type="password"
+                            <input id="password" maxlength="9" minlength="9" name="password"
+                                   onchange="ValidatePassword()" type="password"
                                    value="">
-                            <p class="alert" id="passwordmsg"></p>
+                            <div class="alerts">
+                                <div id="passwordmsg"></div>
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -89,8 +96,12 @@
                                 <option value="Kids">Kids (&euro; 50)</option>
                                 <option value="Family">Family (&euro; 370)</option>
                             </select>
-                            <div class="alert" id="familymsg"></div>
-                            <p class="alert" id="sizemsg2"></p>
+
+                            <!--ALERT TIX-->
+                            <div class="alerts">
+                                <div id="familymsg"></div>
+                                <div id="txmsg"></div>
+                            </div>
 
 
                         </td>
@@ -98,9 +109,13 @@
 
                     <tr>
                         <td><label for="quantity">Quantity <br/> </label><br>
-                            <input id="quantity" min="0" name="quantity" onchange="Calculation();ValidateQtt()" type="number"
+                            <input id="quantity" min="0" name="quantity" onchange="Calculation();ValidateQtt()"
+                                   type="number"
                                    value="">
-                            <div class="alert" id="qttmsg"></div>
+                            <!--ALERT QUANTITY-->
+                            <div class="alerts">
+                                <div id="qttmsg"></div>
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -120,7 +135,7 @@
             </form>
         </div>
 
-</main>
+    </main>
 
     <!--Bootrap Footer-->
     <footer class="footer py-0  text-center  fixed-bottom">
@@ -128,9 +143,15 @@
         <div class="container p-0">
             <!-- Bootstrap grid & Social media butttons -->
             <div class="mb-0 p-2">
-                <a class="btn " href="https://www.facebook.com/" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Facebook']);"><span class="fab fa-facebook "></span></a>
-                <a class="btn " href="https://www.twitter.com/" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Twitter']);"><span class="fab fa-twitter "></span></a>
-                <a class="btn " href="https://www.instagram.com" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Instagram']);"><span class="fab fa-instagram "></span></a>
+                <a class="btn " href="https://www.facebook.com/"
+                   onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Facebook']);"><span
+                        class="fab fa-facebook "></span></a>
+                <a class="btn " href="https://www.twitter.com/"
+                   onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Twitter']);"><span
+                        class="fab fa-twitter "></span></a>
+                <a class="btn " href="https://www.instagram.com"
+                   onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Instagram']);"><span
+                        class="fab fa-instagram "></span></a>
             </div>
         </div>
 
@@ -141,6 +162,6 @@
         </div>
     </footer>
 
-</body>
+    </body>
 
 </html>

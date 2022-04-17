@@ -147,14 +147,14 @@ function ValidateForm(){
     }
 
     else{
-        alert("check your e-mail to see more details of your next adventure">)
+        alert("check your e-mail to see more details of your next adventure");
     }
 
     //output
     document.getElementById("usrmsg2").innerHTML = d;
     document.getElementById("qttmsg").innerHTML = qt;
     document.getElementById("passwordmsg").innerHTML = psw;
-    document.getElementById("sizemsg2").innerHTML = sz;
+    document.getElementById("txmsg").innerHTML = sz;
 
 }
 
@@ -172,7 +172,6 @@ function Calculation() {
     let total = 0;
     let ChosenTicket = document.getElementById("dropdown").value;
     let quantity = document.getElementById("quantity").value;
-    let couponCode = document.getElementById("coupon").value;
 
 
     // Calculate price of the order
@@ -187,11 +186,6 @@ function Calculation() {
         total = 0;
     }
 
-    //Coupon Discount Calculation
-
-    if (couponCode === "MexTexGood"){
-        total = total - (total * 0.09);
-    }
 
     //Final output
     document.getElementById("totalcalculated").innerHTML = "&euro; " + total;
