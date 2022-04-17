@@ -14,12 +14,9 @@ form td{
     text-align: center;
 }
 
-form tr{
-margin: auto}
-
 .fromcontainer{
     background: rgba(131, 164, 156, 0.39);
-    width: 40%;
+    width: 60%;
     flex-wrap: wrap;
     margin: 0 auto;
     border: 3px;
