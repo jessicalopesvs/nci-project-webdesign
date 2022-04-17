@@ -17,7 +17,7 @@
 
     /*Navigation bar default styling */
     header{
-        background-color: #64B8A1;
+        background-color: #10644f;
         font-size: 16px;
     }
 
@@ -42,8 +42,19 @@
     font-weight: bold;
     }
 
-/*End of default styling*/    
+/*End of default styling*/
 
+/*nav bar*/
+
+
+#logo{
+    width: 30%;
+}
+
+.nav-pills .nav-link{
+    font-weight: bold;
+    color: #64B8A1;
+}
 
 /*Index and contact styling*/
     /*Top margin*/
