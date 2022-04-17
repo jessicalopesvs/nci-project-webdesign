@@ -4,6 +4,14 @@ html *{
     font-family: 'Montserrat', sans-serif;
 }
 
+/*Main content background color*/
+main{
+    background-color: #FED523;
+    margin-top: -25px;
+}
+
+
+/*Body default margin*/
 body{
     margin: 0px;
     padding: 0px;
@@ -11,14 +19,17 @@ body{
 
 /*Navigation bar styling */
 header{
-    background-color: #64B8A1;
+    background-color: green;
     color: white;
     font-size: 16px;
+
 }
+
+
 
 /*Footer styling */
 footer{
-    background-color: #FED523;
+    background-color: #F26400;
     font-size: 10px;
 }
 
@@ -58,6 +69,4 @@ h2{
     margin: 5%;
 }
 
-main{
-    margin-top: -25px;
-}
+
