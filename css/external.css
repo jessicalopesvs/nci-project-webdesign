@@ -1,71 +1,79 @@
+/*Default styling - commom in all pages*/
+    /*Global font-family*/
+    html *{
+        font-family: 'Montserrat', sans-serif;
+    }
 
-/*Global font-family*/
-html *{
-    font-family: 'Montserrat', sans-serif;
-}
+    /*Main content styling*/
+    main{
+        background-color: #F1F7F7;
+    }
 
-/*Main content background color*/
-main{
-    background-color: #64B8A1;
-    margin-top: -25px;
-}
+    /*Body margin*/
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
 
+    /*Navigation bar default styling */
+    header{
+        background-color: #64B8A1;
+        font-size: 16px;
+    }
 
-/*Body default margin*/
-body{
-    margin: 0px;
-    padding: 0px;
-  }
+    /*Footer default styling */
+    footer{
+        background-color: #F26400;
+        font-size: 10px;
+    }
 
-/*Navigation bar styling */
-header{
-    background-color: #FED523;
-    font-size: 16px;
-}
+    /*Back to the top button default styling*/
+    .back-to-top{
+        position: fixed;
+        bottom: 100px;
+        right: 50px;
+    }
 
-.nav-link{
-    color:white;
-}
-
-
-/*Footer styling */
-footer{
-    background-color: #F26400;
-    font-size: 10px;
-}
-
-/*Back to the top button styling*/
-.back-to-top{
-    position: fixed;
-    bottom: 100px;
-    right: 50px;
-}
-
-#gallery-wrapper img{
-    width:600px;
-    height:400px;
-}
-
-/*Heading default styling*/
-h1,h2, h3, h4, h5, h6{
+    /*Heading styling*/
+    h1,h2, h3, h4, h5, h6{
     color: #D20001;
     text-align: center;
     font-weight: bold;
 }
 
-/*Contact us page styling*/
-#contact-heading h2{
-    padding: 30px;
+/*End of default styling*/    
 
-}
-#contact-content{
-    padding-bottom: 50px;
 
-}
+/*Index and contact styling*/
+    /*Top margin*/
+    #index-main, .contact-main{
+        margin-top: -25px;
+    }
 
-.send-message{
-    padding-top: 20px;
-}
+    /*Padding for contact us heading*/
+    #contact-heading h2{
+        padding: 30px;
+
+    }
+
+    /*Attraction image gallery styling*/
+    #gallery-wrapper img{
+    width:100%;
+    height: 500px;
+    }
+
+    /*Padding for contact content*/
+    #contact-content{
+        padding-bottom: 50px;
+    
+    }
+    
+    /*Style for Send message button*/
+    .send-message{
+        padding-top: 20px;
+    }
+/*End of index and contact styling*/
+
 
 #top-title{
     /*background-color: rgba(100, 184, 161, 0.58);*/
