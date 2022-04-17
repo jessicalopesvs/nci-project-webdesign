@@ -147,7 +147,7 @@ function ValidateForm(){
     }
 
     else{
-        alert("check your e-mail to see more details of your next adventure");
+        alert("check your e-mail to see more details of the payment for your next adventure");
     }
 
     //output
