@@ -1,0 +1,78 @@
+main #ticket{
+    background-color: #64B8A1;
+}
+
+/*Ticket styling*/
+
+form table{
+    margin-top: 10%;
+    float: none;
+}
+
+form td{
+    width: 20%;
+    text-align: center;
+}
+
+form tr{
+margin: auto}
+
+.fromcontainer{
+    background: rgba(131, 164, 156, 0.39);
+    width: 40%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border: 3px;
+}
+
+form{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+form h2{
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+    color: #F1F7F7;
+}
+
+form h3{
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    color: #10644f;
+}
+
+label{
+    font-family: 'Montserrat', sans-serif;
+
+    font-weight: 100;
+}
+input{
+    text-align: center;
+    width: 70%;
+}
+
+select{
+    width: 80%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#btn-checkout{
+    margin: 13px;
+    padding: 13px 100px;
+    background: #75B63C;
+
+}
+
+/* alert messages */
+
+/*.alert{*/
+/*    color: #600303;*/
+/*    background: rgba(141, 234, 141, 0);*/
+/*    width: 50%;*/
+/*    position: center;*/
+/*}*/
