@@ -1,136 +1,161 @@
 /*Default styling - commom in all pages - group contribuition*/
-    /*Global font-family*/
-    html *{
-        font-family: 'Montserrat', sans-serif;
-    }
+/*Global font-family*/
+html * {
+    font-family: 'Montserrat', sans-serif;
+}
 
-    /*Main content styling*/
-    main{
-        background-color: #F1F7F7;
-        padding-bottom: 50px;
-    }
+/*Main content styling*/
+main {
+    background-color: #F1F7F7;
+    padding-bottom: 50px;
+}
 
-    /*Body margin*/
-    body{
-        margin: 0px;
-        padding: 0px;
-    }
+/*Body margin*/
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
-    /*Navigation bar default styling */
-    header{
-        background-color: #10644f;
-        font-size: 16px;
-    }
+/*Navigation bar default styling */
+header {
+    background-color: #10644f;
+    font-size: 16px;
+}
 
-    /*Footer default styling */
-    footer{
-        background-color: #F26400;
-        font-size: 10px;
-    }
+/*Footer default styling */
+footer {
+    background-color: #F26400;
+    font-size: 10px;
+}
 
-    /*Back to the top button default styling*/
-    .back-to-top{
-        position: fixed;
-        bottom: 100px;
-        right: 50px;
-    }
+/*Back to the top button default styling*/
+.back-to-top {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}
 
-    /*Heading styling*/
-    h1,h2, h3, h4, h5, h6{
+/*Heading styling*/
+h1 {
     color: #D20001;
     text-align: center;
     font-weight: bold;
-    }
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #F26400;
+    font-weight: 200;
+    font-size: 100%;
+    text-align: center;
+}
+
+h3{
+    color: black;
+    font-weight: 800;
+    font-size: 90%;
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
 
 /*End of default styling*/
 
 /*nav bar*/
 
 
-#logo{
+#logo {
     width: 30%;
 }
 
-.nav-pills .nav-link{
+.nav-pills .nav-link {
     font-weight: bold;
     color: #64B8A1;
 }
 
-.nav .btn{
+.nav .btn {
     margin-right: 100px;
 }
-/*Index and contact styling - Julia*/ 
-    /*Top margin*/
-    #index-main, .contact-main{
-        margin-top: -25px;
-    }
 
-    /*Padding for contact us heading*/
-    #contact-heading h2{
-        padding: 30px;
+/*Index and contact styling - Julia*/
+/*Top margin*/
+#index-main, .contact-main {
+    margin-top: -25px;
+}
 
-    }
+/*Padding for contact us heading*/
+#contact-heading h2 {
+    padding: 30px;
 
-    /*Attraction image gallery styling*/
-    #gallery-wrapper img{
-    width:100%;
+}
+
+/*Attraction image gallery styling*/
+#gallery-wrapper img {
+    width: 100%;
     height: 500px;
-    }
+}
 
-    /*Padding for contact content*/
-    #contact-content{
-        padding-bottom: 50px;
-    
-    }
-    
-    /*Style for Send message button*/
-    .send-message{
-        padding-top: 20px;
-    }
+/*Padding for contact content*/
+#contact-content {
+    padding-bottom: 50px;
 
-    /*Style for attractions gallery with text overlay*/
-    #attractions-gallery {
-        position: relative;
+}
 
-    }
+/*Style for Send message button*/
+.send-message {
+    padding-top: 20px;
+}
 
-    #overlay-text{
-        text-align: center;
-        position: absolute;
-        bottom: 220px;
-        left: 90px;
-        font-size: 50px;
-        font-weight: bolder;
+/*Style for attractions gallery with text overlay*/
+#attractions-gallery {
+    position: relative;
 
-    }
+}
+
+#overlay-text {
+    text-align: center;
+    position: absolute;
+    bottom: 220px;
+    left: 90px;
+    font-size: 50px;
+    font-weight: bolder;
+
+}
 
 
-    #overlay-text-2 {
-        text-align: center;
-        position: absolute;
-        bottom: 200px;
-        left: 750px;
-        font-size: 50px;
-        font-weight: bolder;
-    }
+#overlay-text-2 {
+    text-align: center;
+    position: absolute;
+    bottom: 200px;
+    left: 750px;
+    font-size: 50px;
+    font-weight: bolder;
+}
 
 /*End of index and contact styling*/
 
 
-#top-title{
+#top-title {
     background-repeat: no-repeat;
     background-size: 1000px auto;
     padding: 6%;
 }
 
-.card-kids{
+.card-kids {
     background-image: image('./img/tayto-park-fun-fest.jpeg');
 
 }
 
-#faq{
-    margin: 5%;
+/*attractions page*/
+
+.atractions-title{
+    margin: 25px auto;
 }
+.container-fluid{
+    background-color: #64B8A1;
+}
+
+
 
 
 
