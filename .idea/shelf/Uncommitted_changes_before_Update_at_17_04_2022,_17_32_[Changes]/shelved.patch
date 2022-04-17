@@ -1,0 +1,331 @@
+Index: css/external.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/*Default styling - commom in all pages*/\n    /*Global font-family*/\n    html *{\n        font-family: 'Montserrat', sans-serif;\n    }\n\n    /*Main content styling*/\n    main{\n        background-color: #F1F7F7;\n        padding-bottom: 50px;\n    }\n\n    /*Body margin*/\n    body{\n        margin: 0px;\n        padding: 0px;\n    }\n\n    /*Navigation bar default styling */\n    header{\n        background-color: #10644f;\n        font-size: 16px;\n    }\n\n    /*Footer default styling */\n    footer{\n        background-color: #F26400;\n        font-size: 10px;\n    }\n\n    /*Back to the top button default styling*/\n    .back-to-top{\n        position: fixed;\n        bottom: 100px;\n        right: 50px;\n    }\n\n    /*Heading styling*/\n    h1,h2, h3, h4, h5, h6{\n    color: #D20001;\n    text-align: center;\n    font-weight: bold;\n    }\n\n/*End of default styling*/\n\n/*nav bar*/\n\n\n#logo{\n    width: 30%;\n}\n\n.nav-pills .nav-link{\n    font-weight: bold;\n    color: #64B8A1;\n}\n\n/*Index and contact styling*/\n    /*Top margin*/\n    #index-main, .contact-main{\n        margin-top: -25px;\n    }\n\n    /*Padding for contact us heading*/\n    #contact-heading h2{\n        padding: 30px;\n\n    }\n\n    /*Attraction image gallery styling*/\n    #gallery-wrapper img{\n    width:100%;\n    height: 500px;\n    }\n\n    /*Padding for contact content*/\n    #contact-content{\n        padding-bottom: 50px;\n    \n    }\n    \n    /*Style for Send message button*/\n    .send-message{\n        padding-top: 20px;\n    }\n\n    /*Style for attractions gallery with text overlay*/\n    #attractions-gallery {\n        position: relative;\n\n    }\n\n    #overlay-text{\n        text-align: center;\n        position: absolute;\n        bottom: 220px;\n        left: 90px;\n        font-size: 50px;\n        font-weight: bolder;\n\n    }\n\n\n    #overlay-text-2 {\n        text-align: center;\n        position: absolute;\n        bottom: 200px;\n        left: 750px;\n        font-size: 50px;\n        font-weight: bolder;\n    }\n\n/*End of index and contact styling*/\n\n\n#top-title{\n    background-repeat: no-repeat;\n    background-size: 1000px auto;\n    padding: 6%;\n}\n\n.card-kids{\n    background-image: image('./img/tayto-park-fun-fest.jpeg');\n\n}\n\n#faq{\n    margin: 5%;\n}\n\n\n\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/css/external.css b/css/external.css
+--- a/css/external.css	(revision 12def97b1eb07df53766c4a5905591ed538129f1)
++++ b/css/external.css	(date 1650211161268)
+@@ -26,6 +26,7 @@
+     footer{
+         background-color: #F26400;
+         font-size: 10px;
++        margin-top: auto;
+     }
+ 
+     /*Back to the top button default styling*/
+@@ -51,6 +52,9 @@
+     width: 30%;
+ }
+ 
++.nav-pills{
++    margin-right: 5%;
++}
+ .nav-pills .nav-link{
+     font-weight: bold;
+     color: #64B8A1;
+Index: js/script.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Coded by Jéssica Lopes x21147477 - CA2 MARCH/2022\n\n//Username alert\nfunction ValidateUsername() {\n\n    //console test to see if the function is working\n    console.log(\"Validate user test\");\n\n    //Declare Variables\n\n    let user = document.getElementById(\"username\").value;\n    let y = \"\";\n\n    //process\n\n    if (user === \"\") {\n        y = \"please input your username\"\n    }\n\n    //output\n    document.getElementById(\"usrmsg\").innerHTML = y;\n\n}\n\n//Validate password\n\nfunction ValidatePassword(){\n    //console test to see if the function is working\n    console.log(\"Validate Pasword Test\")\n\n    //declare variables\n    let passwordChar = document.getElementById(\"password\").value;\n    let p = \"\";\n\n    //process\n\n    if (passwordChar < 9){\n        p = \"teste\"\n    }\n\n    document.getElementById(\"passwordmsg\").innerHTML = p;\n}\n\n\n//SuperSize Message\n\nfunction MFamilyTicket() {\n\n    //console test to see if the function is working\n    console.log(\"size test\");\n\n    //declare variables\n\n    let familytix = document.getElementById(\"dropdown\").value;\n    let x = \"\";\n\n\n    //process\n    if (familytix === \"Family\") {\n        x = \"This ticket is for 2 adults and 2 kids under 11 years.\"\n    }\n\n    //output\n    document.getElementById(\"familymsg\").innerHTML = x;\n}\n\n\n//Quantity Validation\n\nfunction ValidateQtt (){\n    const fieldQtt = document.getElementById(\"quantity\").value;\n    const qt = \"\";\n\n    if (fieldQtt >= 1){\n\n        qt = \"\"\n\n    }\n\n    document.getElementById(\"qttmsg\").innerHTML = qt;\n\n}\n\n//Coupon Message\n\nfunction Coupon(){\n    //console test to see if the function is working\n    console.log(\"coupon test\");\n\n    //declare variables\n\n    let couponCode = document.getElementById(\"coupon\").value;\n    let c;\n\n    //process\n\n    if (couponCode === \"\"){\n        c = \"\";\n    }\n    else if (couponCode === \"MexTexGood\"){\n        c = \"You got 10% of discount\";\n    } else {\n        c = \"that's an invalid coupon\"}\n\n    //output\n\n    document.getElementById(\"couponmsg\").innerHTML = c;\n\n}\n\n//Submit Validate the form\n\nfunction ValidateForm(){\n\n    //console validation\n    console.log(\"validate test\");\n\n    //declare variables\n\n    const fieldUser = document.getElementById(\"username\").value;\n    const fieldQtt = document.getElementById(\"quantity\").value;\n    const fieldPsw = document.getElementById(\"password\").value;\n    const fieldSize = document.getElementById(\"dropdown\").value;\n    const totalvalue = document.getElementById(\"totalcalculated\").innerHTML;\n\n\n    let d = \"\";\n    let qt = \"\";\n    let psw = \"\";\n    let sz = \"\";\n\n    //Process\n    if(fieldUser === \"\"){\n        d = \"please input your username\";\n    }\n\n    if (fieldQtt === \"\" || fieldQtt === 0){\n        qt = \"The quantity should be more than 1\";\n\n    }\n\n    if (fieldPsw === \"\"){\n        psw = \"Please insert your password\"\n    }\n    if (fieldSize === \"none\"){\n        sz = \"Please chose your burrito's size\"\n    }\n\n    else{\n        alert(\"Your burrito is going to arrive soon!\\n You chose \" + fieldQtt +\n            \" \" + fieldSize + \" burrito, total paid \" + totalvalue)\n    }\n\n    //output\n    document.getElementById(\"usrmsg2\").innerHTML = d;\n    document.getElementById(\"qttmsg\").innerHTML = qt;\n    document.getElementById(\"passwordmsg\").innerHTML = psw;\n    document.getElementById(\"sizemsg2\").innerHTML = sz;\n\n}\n\n\n\n//Calculations (Total and coupon)\n\nfunction Calculation() {\n\n    console.log(\"calculation test\");\n\n    let AdultPrice = 100.00;\n    let KidsPrice = 50.00;\n    let FamilyPrice = 370.50;\n    let total = 0;\n    let ChosenTicket = document.getElementById(\"dropdown\").value;\n    let quantity = document.getElementById(\"quantity\").value;\n    let couponCode = document.getElementById(\"coupon\").value;\n\n\n    // Calculate price of the order\n\n    if (ChosenTicket === \"Adult\") {\n        total = (total + AdultPrice) * quantity;\n    } else if (ChosenTicket === \"Kids\") {\n        total = (total + KidsPrice) * quantity;\n    }  else if (ChosenTicket === \"Family\") {\n        total = (total + FamilyPrice) * quantity;\n    } else {\n        total = 0;\n    }\n\n    //Coupon Discount Calculation\n\n    if (couponCode === \"MexTexGood\"){\n        total = total - (total * 0.09);\n    }\n\n    //Final output\n    document.getElementById(\"totalcalculated\").innerHTML = \"&euro; \" + total;\n\n}\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/js/script.js b/js/script.js
+--- a/js/script.js	(revision 12def97b1eb07df53766c4a5905591ed538129f1)
++++ b/js/script.js	(date 1650212960302)
+@@ -35,19 +35,19 @@
+     //process
+ 
+     if (passwordChar < 9){
+-        p = "teste"
++        p = "Please input your password correctly";
+     }
+ 
+     document.getElementById("passwordmsg").innerHTML = p;
+ }
+ 
+ 
+-//SuperSize Message
++//Family Ticket Message
+ 
+ function MFamilyTicket() {
+ 
+     //console test to see if the function is working
+-    console.log("size test");
++    console.log("family test");
+ 
+     //declare variables
+ 
+@@ -65,22 +65,6 @@
+ }
+ 
+ 
+-//Quantity Validation
+-
+-function ValidateQtt (){
+-    const fieldQtt = document.getElementById("quantity").value;
+-    const qt = "";
+-
+-    if (fieldQtt >= 1){
+-
+-        qt = ""
+-
+-    }
+-
+-    document.getElementById("qttmsg").innerHTML = qt;
+-
+-}
+-
+ //Coupon Message
+ 
+ function Coupon(){
+@@ -120,7 +104,7 @@
+     const fieldUser = document.getElementById("username").value;
+     const fieldQtt = document.getElementById("quantity").value;
+     const fieldPsw = document.getElementById("password").value;
+-    const fieldSize = document.getElementById("dropdown").value;
++    const fieldTicket = document.getElementById("dropdown").value;
+     const totalvalue = document.getElementById("totalcalculated").innerHTML;
+ 
+ 
+@@ -140,28 +124,29 @@
+     }
+ 
+     if (fieldPsw === ""){
+-        psw = "Please insert your password"
++        psw = "Please insert your password";
++
+     }
+-    if (fieldSize === "none"){
+-        sz = "Please chose your burrito's size"
++    if (fieldTicket === "none"){
++        sz = "Please chose your ticket";
+     }
+ 
+     else{
+-        alert("Your burrito is going to arrive soon!\n You chose " + fieldQtt +
+-            " " + fieldSize + " burrito, total paid " + totalvalue)
++        alert("Check your e-mail to get details of your purchase");
+     }
+ 
+     //output
+     document.getElementById("usrmsg2").innerHTML = d;
+     document.getElementById("qttmsg").innerHTML = qt;
+     document.getElementById("passwordmsg").innerHTML = psw;
+-    document.getElementById("sizemsg2").innerHTML = sz;
++    document.getElementById("txmsg").innerHTML = sz;
+ 
+-}
++    return false;
+ 
+ 
++}
+ 
+-//Calculations (Total and coupon)
++//Calculations
+ 
+ function Calculation() {
+ 
+@@ -173,7 +158,7 @@
+     let total = 0;
+     let ChosenTicket = document.getElementById("dropdown").value;
+     let quantity = document.getElementById("quantity").value;
+-    let couponCode = document.getElementById("coupon").value;
++    // let couponCode = document.getElementById("coupon").value;
+ 
+ 
+     // Calculate price of the order
+@@ -190,9 +175,9 @@
+ 
+     //Coupon Discount Calculation
+ 
+-    if (couponCode === "MexTexGood"){
+-        total = total - (total * 0.09);
+-    }
++    // if (couponCode === "MexTexGood"){
++    //     total = total - (total * 0.09);
++    // }
+ 
+     //Final output
+     document.getElementById("totalcalculated").innerHTML = "&euro; " + total;
+Index: css/jessica.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>main #ticket{\n    background-color: #64B8A1;\n}\n\n/*Ticket styling*/\n\nform table{\n    margin-top: 10%;\n    float: none;\n}\n\nform td{\n    width: 20%;\n    text-align: center;\n}\n\n.fromcontainer{\n    background: rgba(131, 164, 156, 0.39);\n    width: 60%;\n    flex-wrap: wrap;\n    margin: 0 auto;\n    border: 3px;\n}\n\nform{\n    font-family: 'Montserrat', sans-serif;\n    color: black;\n}\n\nform h2{\n    text-align: center;\n    font-size: 50px;\n    padding: 30px;\n    color: #F1F7F7;\n}\n\nform h3{\n    text-align: center;\n    font-size: 30px;\n    padding: 30px;\n    color: #10644f;\n}\n\nlabel{\n    font-family: 'Montserrat', sans-serif;\n\n    font-weight: 100;\n}\ninput{\n    text-align: center;\n    width: 70%;\n}\n\nselect{\n    width: 80%;\n    text-align: center;\n    font-family: 'Montserrat', sans-serif;\n\n}\n\n#btn-checkout{\n    margin: 13px;\n    padding: 13px 100px;\n    background: #75B63C;\n\n}\n\n/* alert messages */\n\n.alert{\n    color: #600303;\n    background: rgba(141, 234, 141, 0);\n    width: 50%;\n    position: center;\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/css/jessica.css b/css/jessica.css
+--- a/css/jessica.css	(revision 12def97b1eb07df53766c4a5905591ed538129f1)
++++ b/css/jessica.css	(date 1650212564992)
+@@ -5,7 +5,7 @@
+ /*Ticket styling*/
+ 
+ form table{
+-    margin-top: 10%;
++    margin-top: 20%;
+     float: none;
+ }
+ 
+@@ -67,9 +67,11 @@
+ 
+ /* alert messages */
+ 
+-.alert{
+-    color: #600303;
+-    background: rgba(141, 234, 141, 0);
+-    width: 50%;
++tr .alerts{
++    color: #ffffff;
++    background: rgb(70, 68, 68);
++    text-align:  center;
+     position: center;
++    align-content: center;
++
+ }
+Index: common/tickets.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n    <!-- Bootstrap CSS -->\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\"\n          integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" crossorigin=\"anonymous\">\n\n    <!--css group-->\n    <link href=\"../css/external.css\" rel=\"stylesheet\" type=\"text/css\">\n\n    <link href=\"../css/jessica.css\" rel=\"stylesheet\" type=\"text/css\">\n\n    <!-- JAVA SCRIPT VALIDATION -->\n    <script src=\"../js/script.js\" type=\"text/javascript\"></script>\n\n    <title>Tickets</title>\n</head>\n<body>\n\n<main id=\"ticket\">\n\n    <body>\n\n\n\n    <header class=\"d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom\">\n        <a href=\"/\" class=\"d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none\">\n            <svg class=\"bi me-2\" width=\"40\" height=\"32\">\n                <use xlink:href=\"#bootstrap\"></use>\n            </svg>\n            <span class=\"fs-4\"><img src=\"../img/guiness-park-logo.png\" id=\"logo\"></span>\n        </a>\n\n        <ul class=\"nav nav-pills\">\n            <li class=\"nav-item \"><a href=\"/index.html\" class=\"nav-link\">Home</a></li>\n            <li class=\"nav-item \"><a href=\"../common/attractions.html\" class=\"nav-link text-light\">Atttractions</a></li>\n            <li class=\"nav-item\"><a href=\"../common/about.html\" class=\"nav-link\">About us</a></li>\n            <li class=\"nav-item\"><a href=\"../common/faq.html\" class=\"nav-link\">FAQs</a></li>\n            <li class=\"nav-item\"><a href=\"../common/contact.html\" class=\"nav-link\">Contact Us</a></li>\n            <li class=\"nav-item\"><a href=\"../common/tickets.html\" class=\"nav-link\">Ticket</a></li>\n        </ul>\n\n    </header>\n\n    <main>\n        <!--Starting the form -->\n        <div class=\"fromcontainer\">\n            <form id=\"checkout\" method=\"get\" name=\"checkout\" onsubmit=\"ValidateForm(); return false;\">\n                <table>\n                    <tr>\n                        <td>\n                            <h2 class=\"ticket-title\">Purchase your ticket</h2>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <h3>Login</h3>\n\n                        <label for=\"username\"> Username <br/> </label><br/>\n                            <input id=\"username\"  name=\"username\" onchange=\"ValidateUsername()\" type=\"text\"\n                                   value=\"\">\n                            <p class=\"alert\" id=\"usrmsg\"></p>\n                            <p class=\"alert\" id=\"usrmsg2\"></p>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td><label for=\"password\"> Password <br/> </label><br/>\n                            <input id=\"password\" maxlength=\"9\" minlength=\"9\" name=\"password\" onchange=\"ValidatePassword()\" type=\"password\"\n                                   value=\"\">\n                            <p class=\"alert\" id=\"passwordmsg\"></p>\n                        </td>\n                    </tr>\n                    <tr>\n\n                        <!-- Size dropdown here -->\n                        <td>\n                            <h3>Order</h3>\n                            <label for=\"dropdown\"> Chose a ticket type </label><br/>\n                            <select id=\"dropdown\" onchange=\"MFamilyTicket();Calculation()\">\n                                <option value=\"none\">----Select----</option>\n                                <option value=\"Adult\">Adult (&euro; 100)</option>\n                                <option value=\"Kids\">Kids (&euro; 50)</option>\n                                <option value=\"Family\">Family (&euro; 370)</option>\n                            </select>\n                            <div class=\"alert\" id=\"familymsg\"></div>\n                            <p class=\"alert\" id=\"sizemsg2\"></p>\n\n\n                        </td>\n                    </tr>\n\n                    <tr>\n                        <td><label for=\"quantity\">Quantity <br/> </label><br>\n                            <input id=\"quantity\" min=\"0\" name=\"quantity\" onchange=\"Calculation();ValidateQtt()\" type=\"number\"\n                                   value=\"\">\n                            <div class=\"alert\" id=\"qttmsg\"></div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td id=\"totalcontainer\">\n                            <p class=\"totaltitle\">TOTAL</p>\n                            <p id=\"totalcalculated\"></p>\n                        </td>\n                    </tr>\n\n                    <tr>\n                        <td>\n                            <button id=\"btn-checkout\" type=\"submit\">Submit</button>\n                        </td>\n                    </tr>\n\n                </table>\n            </form>\n        </div>\n\n</main>\n\n    <!--Bootrap Footer-->\n    <footer class=\"footer py-0  text-center  fixed-bottom\">\n        <!-- Bootstrap container -->\n        <div class=\"container p-0\">\n            <!-- Bootstrap grid & Social media butttons -->\n            <div class=\"mb-0 p-2\">\n                <a class=\"btn \" href=\"https://www.facebook.com/\" onclick=\"_gaq.push(['_trackEvent', 'exit', 'footer', 'Facebook']);\"><span class=\"fab fa-facebook \"></span></a>\n                <a class=\"btn \" href=\"https://www.twitter.com/\" onclick=\"_gaq.push(['_trackEvent', 'exit', 'footer', 'Twitter']);\"><span class=\"fab fa-twitter \"></span></a>\n                <a class=\"btn \" href=\"https://www.instagram.com\" onclick=\"_gaq.push(['_trackEvent', 'exit', 'footer', 'Instagram']);\"><span class=\"fab fa-instagram \"></span></a>\n            </div>\n        </div>\n\n        <!--Copyright-->\n        <!-- Bootsrap grid -->\n        <div class=\"p-2\" style=\"background-color: rgba(0, 0, 0, 0.2);\">\n            <p class=\"footer-p\"> © 2022 Guinness Park</p>\n        </div>\n    </footer>\n\n</body>\n\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/common/tickets.html b/common/tickets.html
+--- a/common/tickets.html	(revision 12def97b1eb07df53766c4a5905591ed538129f1)
++++ b/common/tickets.html	(date 1650213129744)
+@@ -20,14 +20,10 @@
+     <title>Tickets</title>
+ </head>
+ <body>
+-
+ <main id="ticket">
+ 
+-    <body>
+-
+ 
+-
+-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
++    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom fixed-top">
+         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+             <svg class="bi me-2" width="40" height="32">
+                 <use xlink:href="#bootstrap"></use>
+@@ -35,13 +31,13 @@
+             <span class="fs-4"><img src="../img/guiness-park-logo.png" id="logo"></span>
+         </a>
+ 
+-        <ul class="nav nav-pills">
+-            <li class="nav-item "><a href="/index.html" class="nav-link">Home</a></li>
+-            <li class="nav-item "><a href="../common/attractions.html" class="nav-link text-light">Atttractions</a></li>
++        <ul class="nav nav-pills mr-auto">
++            <li class="nav-item "><a href="https://jessicalopesvs.github.io/project/" class="nav-link">Home</a></li>
++            <li class="nav-item "><a href="../common/attractions.html" class="nav-link">Atttractions</a></li>
+             <li class="nav-item"><a href="../common/about.html" class="nav-link">About us</a></li>
+             <li class="nav-item"><a href="../common/faq.html" class="nav-link">FAQs</a></li>
+             <li class="nav-item"><a href="../common/contact.html" class="nav-link">Contact Us</a></li>
+-            <li class="nav-item"><a href="../common/tickets.html" class="nav-link">Ticket</a></li>
++            <li class="nav-item"><a href="../common/tickets.html" class="btn btn-warning ml-5">Ticket</a></li>
+         </ul>
+ 
+     </header>
+@@ -60,22 +56,24 @@
+                         <td>
+                             <h3>Login</h3>
+ 
+-                        <label for="username"> Username <br/> </label><br/>
+-                            <input id="username"  name="username" onchange="ValidateUsername()" type="text"
++                            <label for="username"> Username <br/> </label><br/>
++                            <input id="username" name="username" onchange="ValidateUsername()" type="text"
+                                    value="">
+-                            <p class="alert" id="usrmsg"></p>
+-                            <p class="alert" id="usrmsg2"></p>
++                            <div class="alerts">
++                                <div id="usrmsg"></div>
++                                <div id="usrmsg2"></div>
++                            </div>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td><label for="password"> Password <br/> </label><br/>
+-                            <input id="password" maxlength="9" minlength="9" name="password" onchange="ValidatePassword()" type="password"
++                            <input id="password" maxlength="9" minlength="9" name="password"
++                                   onchange="ValidatePassword()" type="password"
+                                    value="">
+-                            <p class="alert" id="passwordmsg"></p>
++                            <div class="alerts" id="passwordmsg"></div>
+                         </td>
+                     </tr>
+                     <tr>
+-
+                         <!-- Size dropdown here -->
+                         <td>
+                             <h3>Order</h3>
+@@ -86,18 +84,22 @@
+                                 <option value="Kids">Kids (&euro; 50)</option>
+                                 <option value="Family">Family (&euro; 370)</option>
+                             </select>
+-                            <div class="alert" id="familymsg"></div>
+-                            <p class="alert" id="sizemsg2"></p>
++                            <div class="alerts">
++                                <div id="familymsg"></div>
++                                <div id="txmsg"></div>
++                            </div>
+ 
+ 
+                         </td>
+                     </tr>
+-
+                     <tr>
+                         <td><label for="quantity">Quantity <br/> </label><br>
+-                            <input id="quantity" min="0" name="quantity" onchange="Calculation();ValidateQtt()" type="number"
++                            <input id="quantity" min="0" name="quantity" onchange="Calculation();ValidateQtt()"
++                                   type="number"
+                                    value="">
+-                            <div class="alert" id="qttmsg"></div>
++                            <div class="alerts">
++                                <div id="qttmsg"></div>
++                            </div>
+                         </td>
+                     </tr>
+                     <tr>
+@@ -117,17 +119,23 @@
+             </form>
+         </div>
+ 
+-</main>
++
+ 
+     <!--Bootrap Footer-->
+-    <footer class="footer py-0  text-center  fixed-bottom">
++    <footer class="footer py-0  text-center  navbar-fixed-bottom">
+         <!-- Bootstrap container -->
+         <div class="container p-0">
+             <!-- Bootstrap grid & Social media butttons -->
+             <div class="mb-0 p-2">
+-                <a class="btn " href="https://www.facebook.com/" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Facebook']);"><span class="fab fa-facebook "></span></a>
+-                <a class="btn " href="https://www.twitter.com/" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Twitter']);"><span class="fab fa-twitter "></span></a>
+-                <a class="btn " href="https://www.instagram.com" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Instagram']);"><span class="fab fa-instagram "></span></a>
++                <a class="btn " href="https://www.facebook.com/"
++                   onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Facebook']);"><span
++                        class="fab fa-facebook "></span></a>
++                <a class="btn " href="https://www.twitter.com/"
++                   onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Twitter']);"><span
++                        class="fab fa-twitter "></span></a>
++                <a class="btn " href="https://www.instagram.com"
++                   onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Instagram']);"><span
++                        class="fab fa-instagram "></span></a>
+             </div>
+         </div>
+ 
+@@ -137,7 +145,6 @@
+             <p class="footer-p"> © 2022 Guinness Park</p>
+         </div>
+     </footer>
+-
++</main>
+ </body>
+-
+ </html>
+\ No newline at end of file
