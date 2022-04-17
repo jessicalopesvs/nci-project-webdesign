@@ -1,0 +1,63 @@
+
+/*Ticket form styling*/
+
+html*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+}
+
+.fromcontainer{
+    background-color:#FED523;
+    display: flex;
+    justify-content: center;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+
+form{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+h2{
+    color:#F26400;
+    text-align: center;
+
+
+}
+
+h3{
+    color: #75B63C;
+    text-align: left;
+}
+
+input{
+    text-align: center;
+    width:500px;
+    padding: 0;
+}
+
+form tr, td{
+    padding: 0%;
+}
+
+#btn-checkout{
+    margin: 13px;
+    padding: 13px 100px;
+    background: red;
+
+}
+
+label {
+    text-align: left;
+}
+
+/* alert messages */
+
+.alert{
+    color: orangered;
+    width: 50%;
+    position: center;
+}
