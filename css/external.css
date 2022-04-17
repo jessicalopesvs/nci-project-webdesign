@@ -104,8 +104,14 @@
 
 
 #top-title{
-    background-image: ;
+    background-repeat: no-repeat;
+    background-size: 1000px auto;
     padding: 6%;
+}
+
+.card-kids{
+    background-image: image('./img/tayto-park-fun-fest.jpeg');
+
 }
 
 #faq{
