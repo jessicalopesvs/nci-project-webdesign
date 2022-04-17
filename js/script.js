@@ -26,7 +26,7 @@ function ValidateUsername() {
 
 function ValidatePassword(){
     //console test to see if the function is working
-    console.log("Validate Pasword Test")
+    console.log("Validate Password Test")
 
     //declare variables
     let passwordChar = document.getElementById("password").value;
@@ -69,7 +69,7 @@ function MFamilyTicket() {
 
 function ValidateQtt (){
     const fieldQtt = document.getElementById("quantity").value;
-    const qt = "";
+    let qt = "";
 
     if (fieldQtt >= 1){
 

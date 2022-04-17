@@ -25,7 +25,8 @@
     <!--Font family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap"
+          rel="stylesheet">
 
 
     <title>Tickets</title>
@@ -34,13 +35,11 @@
 
 <main id="ticket">
 
-    <body>
-
 
     <!--NAV BAR BOOTSTRAP-->
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <span class="fs-4"><img src="../img/guiness-park-logo.png" id="logo"></span>
+            <span class="fs-4"><img src="../img/guiness-park-logo.png" id="logo" alt="logo"></span>
         </a>
 
         <ul class="nav nav-pills">
@@ -56,92 +55,141 @@
     <!--End of nav bar-->
 
 
-    <main>
-        <!--Starting the form -->
-        <div class="fromcontainer">
-            <form id="checkout" method="get" name="checkout" onsubmit="ValidateForm(); return false;">
-                <table>
-                    <tr>
-                        <td>
-                            <h2 class="ticket-title">Purchase your ticket</h2>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>Login</h3>
+    <!--Starting the form -->
+    <div class="fromcontainer">
+        <form id="checkout" method="get" name="checkout" onsubmit="ValidateForm(); return false;">
+            <table>
+                <tr>
+                    <td>
+                        <h2 class="ticket-title">Purchase your ticket</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Login</h3>
 
-                            <label for="username"> Username <br/> </label><br/>
-                            <input id="username" name="username" onchange="ValidateUsername()" type="text"
-                                   value="">
-                            <!--alerts-->
-                            <div class="alerts">
-                                <div id="usrmsg"></div>
-                                <div id="usrmsg2"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="password"> Password <br/> </label><br/>
-                            <input id="password" maxlength="9" minlength="9" name="password"
-                                   onchange="ValidatePassword()" type="password"
-                                   value="">
-                            <div class="alerts">
-                                <div id="passwordmsg"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
+                        <label for="username"> Username <br/> </label><br/>
+                        <input id="username" name="username" onchange="ValidateUsername()" type="text"
+                               value="">
+                        <!--alerts-->
+                        <div class="alerts">
+                            <div id="usrmsg"></div>
+                            <div id="usrmsg2"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password"> Password <br/> </label><br/>
+                        <input id="password" maxlength="9" minlength="9" name="password"
+                               onchange="ValidatePassword()" type="password"
+                               value="">
+                        <div class="alerts">
+                            <div id="passwordmsg"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
 
-                        <!-- Size dropdown here -->
-                        <td>
-                            <h3>Order</h3>
-                            <label for="dropdown"> Chose a ticket type </label><br/>
-                            <select id="dropdown" onchange="MFamilyTicket();Calculation()">
-                                <option value="none">----Select----</option>
-                                <option value="Adult">Adult (&euro; 100)</option>
-                                <option value="Kids">Kids (&euro; 50)</option>
-                                <option value="Family">Family (&euro; 370)</option>
-                            </select>
+                    <!-- Size dropdown here -->
+                    <td>
+                        <h3>Order</h3>
+                        <label for="dropdown"> Chose a ticket type </label><br/>
+                        <select id="dropdown" onchange="MFamilyTicket();Calculation()">
+                            <option value="none">----Select----</option>
+                            <option value="Adult">Adult (&euro; 100)</option>
+                            <option value="Kids">Kids (&euro; 50)</option>
+                            <option value="Family">Family (&euro; 370)</option>
+                        </select>
 
-                            <!--ALERT TIX-->
-                            <div class="alerts">
-                                <div id="familymsg"></div>
-                                <div id="txmsg"></div>
-                            </div>
+                        <!--ALERT TIX-->
+                        <div class="alerts">
+                            <div id="familymsg"></div>
+                            <div id="txmsg"></div>
+                        </div>
 
 
-                        </td>
-                    </tr>
+                    </td>
+                </tr>
 
-                    <tr>
-                        <td><label for="quantity">Quantity <br/> </label><br>
-                            <input id="quantity" min="0" name="quantity" onchange="Calculation();ValidateQtt()"
-                                   type="number"
-                                   value="">
-                            <!--ALERT QUANTITY-->
-                            <div class="alerts">
-                                <div id="qttmsg"></div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="totalcontainer">
-                            <p class="totaltitle">TOTAL</p>
-                            <p id="totalcalculated"></p>
-                        </td>
-                    </tr>
+                <tr>
+                    <td><label for="quantity">Quantity <br/> </label><br>
+                        <input id="quantity" min="0" name="quantity" onchange="Calculation();ValidateQtt()"
+                               type="number"
+                               value="">
+                        <!--ALERT QUANTITY-->
+                        <div class="alerts">
+                            <div id="qttmsg"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="totalcontainer">
+                        <p class="totaltitle">TOTAL</p>
+                        <p id="totalcalculated"></p>
+                    </td>
+                </tr>
 
-                    <tr>
-                        <td>
-                            <button id="btn-checkout" type="submit">Submit</button>
-                        </td>
-                    </tr>
+                <tr>
+                    <td>
+                        <button id="btn-checkout" type="submit">Submit</button>
+                    </td>
+                </tr>
 
-                </table>
-            </form>
+            </table>
+        </form>
+    </div>
+
+    <!--        CROSSELLING-->
+    <div class="space">
+        <div class="container atractions-title container-background-black" id="kids">
+            <h1> How are you gonna come?</h1>
+            <h2>check out our partners</h2>
+
+        </div>
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-3 mx-10">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="../img/kids1-denisse-leon-5dMzbtV6CLo-unsplash.jpeg" alt="Guinnes Coaster">
+                    <div class="attraction-body pb-5">
+                        <h3>Airline company</h3>
+                        <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Cras
+                            lobortis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="../img/kids2-alex-grodkiewicz-pNR58WKnNio-unsplash.jpeg" alt="Guinnes Coaster">
+                    <div class="attraction-body pb-5">
+                        <h3>Hotel</h3>
+                        <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Cras
+                            lobortis.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="../img/kids3markus-spiske-u-s3EG1QUXw-unsplash.jpeg" alt="Guinnes Coaster">
+                    <div class="attraction-body pb-5">
+                        <h3>Car Rent</h3>
+                        <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Cras
+                            lobortis.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </main>
+    </div>
+
 
     <!--Bootrap Footer-->
     <footer class="footer py-0  text-center  fixed-bottom">
@@ -168,6 +216,7 @@
         </div>
     </footer>
 
-    </body>
 
+</main>
+</body>
 </html>
