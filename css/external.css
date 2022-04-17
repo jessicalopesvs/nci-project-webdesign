@@ -56,6 +56,9 @@
     color: #64B8A1;
 }
 
+.nav .btn{
+    margin-right: 100px;
+}
 /*Index and contact styling - Julia*/ 
     /*Top margin*/
     #index-main, .contact-main{

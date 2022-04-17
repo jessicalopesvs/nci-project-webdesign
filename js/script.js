@@ -143,12 +143,11 @@ function ValidateForm(){
         psw = "Please insert your password"
     }
     if (fieldSize === "none"){
-        sz = "Please chose your burrito's size"
+        sz = "Please chose your ticket size"
     }
 
     else{
-        alert("Your burrito is going to arrive soon!\n You chose " + fieldQtt +
-            " " + fieldSize + " burrito, total paid " + totalvalue)
+        alert("check your e-mail to see more details of your next adventure">)
     }
 
     //output
