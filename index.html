@@ -96,7 +96,6 @@
             <span class="carousel-control-next-icon"></span>
             </button>
 
-            
         </div><!--Caroulsel bootstrap template-->
       
         <!--Bootstrap container-->
@@ -108,7 +107,7 @@
                 <div class="col-md-12 p-5">
                     <div class="col-md-12 text-center">
                         <h1>The Guinness Experience</h1>
-                    <p>Come visit the Guinness Park this summer! The park has all-new attractions to delight people of every age across the pond. Enjoy an immersive experience inspired by the black stuff!</p></p>
+                    <p>Come visit the Guinness Park this summer! The park has all-new attractions to delight people of every age across the pond. Enjoy an immersive experience inspired by the black stuff!</p>
                 </div>
             </div><!--row-->
 
@@ -149,51 +148,50 @@
                     <div class="col-md-12 text-center p-5">
                         <h1>Buy tickets online</h1>
                 </div>
+            </div>
 
-                <!--Bootstrap row with grid-->
-                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                    <div class="col">
-                        <!--Bootstrap pricing card-->
-                        <div class="card mb-4 rounded-3 shadow-sm border-warning">
-                            <div class="card-header py-3  bg-warning border-warning">
-                                <h4 class="my-0 fw-normal text-dark">Junior ticket</h4>
-                            </div>
-                            <div class="card-body">
-                                <h1 class="card-title pricing-card-title">€ 50<small class="text-muted fw-light"></small></h1>
-                                <p>Children under 7 years old</p>
-                                <a href="common/tickets.html">
-                                <button type="button" class="w-100 btn btn-lg btn-warning">Buy ticket</button>
-                                </a>
-                            </div><!--card body-->
-                        </div><!--card grid-->
-                    </div><!--col-->
-                    <div class="col">
-                        <div class="card mb-4 rounded-3 shadow-sm border-warning">
-                            <div class="card-header py-3  bg-warning border-warning">
-                                <h4 class="my-0 fw-normal text-dark">Regular ticket</h4>
-                            </div>
-                            <div class="card-body">
-                                <h1 class="card-title pricing-card-title">€ 100<small class="text-muted fw-light"></small></h1>
-                                <p>Over 7 year old</p>
-                                <button type="button" class="w-100 btn btn-lg btn-warning">Buy ticket</button>
-                            </div><!--card body-->
-                        </div><!--card grid-->
-                    </div><!--col-->
-                    <div class="col">
-                        <div class="card mb-4 rounded-3 shadow-sm border-warning">
-                            <div class="card-header py-3  bg-warning border-warning">
-                                <h4 class="my-0 fw-normal text-dark">Family ticket</h4>
-                            </div>
-                            <div class="card-body">
-                                <h1 class="card-title pricing-card-title">€ 150<small class="text-muted fw-light"></small></h1>
-                                <p>Up to 4 family members</p>
-                            <button type="button" class="w-100 btn btn-lg btn-warning">Buy ticket</button>
-                            
+            <!--Bootstrap row with grid-->
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <!--Bootstrap pricing card-->
+                    <div class="card mb-4 rounded-3 shadow-sm border-warning">
+                        <div class="card-header py-3  bg-warning border-warning">
+                            <h4 class="my-0 fw-normal text-dark">Junior ticket</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">€ 50<small class="text-muted fw-light"></small></h1>
+                            <p>Children under 7 years old</p>
+                            <button type="button" class="w-100 btn btn-lg btn-warning" onClick="window.location.href='commom/tickets.html'">Buy tickets</button>
                         </div><!--card body-->
-                    </div><!--col-->
-                </div><!--row-cols-->
-            </div><!--row-tickets-->
-        </div><!--container-->
+                    </div><!--card grid-->
+                </div><!--col-->
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-warning">
+                        <div class="card-header py-3  bg-warning border-warning">
+                            <h4 class="my-0 fw-normal text-dark">Regular ticket</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">€ 100<small class="text-muted fw-light"></small></h1>
+                            <p>Over 7 year old</p>
+                            <button type="button" class="w-100 btn btn-lg btn-warning" onClick="window.location.href='commom/tickets.html'">Buy tickets</button>
+                        </div><!--card body-->
+                    </div><!--card grid-->
+                </div><!--col-->
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-warning">
+                        <div class="card-header py-3  bg-warning border-warning">
+                            <h4 class="my-0 fw-normal text-dark">Family ticket</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">€ 150<small class="text-muted fw-light"></small></h1>
+                            <p>Up to 4 family members</p>
+                            <button type="button" class="w-100 btn btn-lg btn-warning" onClick="window.location.href='commom/tickets.html'">Buy tickets</button>
+                        </div>
+                    </div><!--card body-->
+                </div><!--col-->
+            </div><!--row-cols-->
+        </div><!--row-tickets-->
+    </div><!--container-->
     </main>
 
     <!--Back to top button-->
@@ -204,11 +202,11 @@
         <!-- Bootstrap container -->
         <div class="container p-0">
         <!-- Bootstrap grid & Social media butttons -->
-        <section class="mb-0 p-2">
+        <div class="mb-0 p-2">
             <a class="btn " href="https://www.facebook.com/" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Facebook']);"><span class="fab fa-facebook "></span></a>
             <a class="btn " href="https://www.twitter.com/" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Twitter']);"><span class="fab fa-twitter "></span></a>
             <a class="btn " href="https://www.instagram.com" onclick="_gaq.push(['_trackEvent', 'exit', 'footer', 'Instagram']);"><span class="fab fa-instagram "></span></a>
-        </section>
+        </div>
         </div>  
 
         <!--Copyright-->
