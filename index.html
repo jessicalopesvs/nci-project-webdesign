@@ -40,12 +40,12 @@
 
         <!--Botstrap nav-pills-->
         <ul class="nav nav-pills">
-            <li class="nav-item "><a href="index.html" class="nav-link text-warning">Home</a></li>
-            <li class="nav-item "><a href="common/attractions.html" class="nav-link text-warning">Atttractions</a></li>
-            <li class="nav-item"><a href="common/about.html" class="nav-link text-warning">About us</a></li>
-            <li class="nav-item"><a href="commonfaqs.html" class="nav-link text-warning">FAQs</a></li>
-            <li class="nav-item"><a href="common/contact.html" class="nav-link text-warning">Contact Us</a></li>
-            <li class="nav-item"><a href="common/contact.html" class="nav-link text-warning">Ticket</a></li>
+            <li class="nav-item "><a href="index.html" class="nav-link text-dark">Home</a></li>
+            <li class="nav-item "><a href="common/attractions.html" class="nav-link text-dark">Atttractions</a></li>
+            <li class="nav-item"><a href="common/about.html" class="nav-link text-dark">About us</a></li>
+            <li class="nav-item"><a href="commonfaqs.html" class="nav-link text-dark">FAQs</a></li>
+            <li class="nav-item"><a href="common/contact.html" class="nav-link text-dark">Contact Us</a></li>
+            <li class="nav-item"><a href="common/contact.html" class="nav-link text-dark">Ticket</a></li>
 
         </ul>
     </header>
@@ -65,21 +65,22 @@
             <!-- Images slides -->
             <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/pintman.png" alt="Attractions" class="d-block w-100">
+                <img src="img/tayto-park-fun-fest.jpeg" alt="Attractions" class="d-block w-100">
                 <div class="carousel-caption">
                     <h3>Attractions</h3>
-                    <p>We had such a great time in LA!</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="img/pintman.png" alt="Tickets" class="d-block w-100">
                 <div class="carousel-caption">
-                    <h3>Los Angeles</h3>
-                    <p>We had such a great time in LA!</p>
+                    <h3>Tickets</h3>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/pintman.png" alt="New York" class="d-block w-100">
+                <img src="img/pintman.png" alt="About Us" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h3>Tickets</h3>
+                </div>
             </div>
             </div>
         
@@ -98,7 +99,7 @@
         
       
         <!--Bootstrap container-->
-        <div class="container">
+        <div class="container mt-5" id="gallery-wrapper">
 
             <!--Bootstrap row-->
             <div class="row" id="row-experience">
@@ -108,44 +109,61 @@
                         <h1>The Guinness Experience</h1>
                     <p>Come visit the Guinness Park this summer! The park has all-new attractions to delight people of every age and from across the pond. Enjoy an immersive experience inspired by the black stuff!</p></p>
                 </div>
-            </div><!--row 1-->
+            </div><!--row-->
 
-            <!--Bootstrap row-->
-            <div class="row" id="attractions-gallery">
-                <!--Bootstrap grid-->
-                <div class="col-md-4 p-0">
-                    <a class="pintman" href="common/attractions.html#pintman"><img class="w-100" src="img/pintman.png"></a>
-                </div>
-                <!--Bootstrap grid-->
-                <div class="col-md-4 p-0">
-                    <a class="fartChamber" href="common/attractions.html#fartChamber"><img class="w-100" src="img/pintman.png" ></a>
-                </div>
-                <!--Bootstrap grid-->
-                <div class="col-md-4 p-0">
-                    <a class="gLake" href="common/attractions.html#gLake"><img class="w-100" src="img/pintman.png"></a>
-                </div>
-              </div>
+            <!--Bootstrap container-->
+            <div class="container" id="attractions-gallery">
+                <!--Bootstrap row-->
+                <div class="row">
+                    <!--Bootstrap grid-->
+                    <div class="col-md-4 col-lg-4 p-0">
+                        <a class="pintman" href="common/attractions.html#pintman">
+                            <img src="img/pintman.png" class="img-fluid" alt="Pintman Express">
+                        </a>
+                    </div>
+                    <!--Bootstrap grid-->
+                    <div class="col-md-4 col-lg-4 p-0">
+                        <a class="fartChamber" href="common/attractions.html#fartChamber">
+                            <img src="img/fartChamber.jpg" class="img-fluid" alt="Fart Chamber Escape Room">
+                            </a>
+                    </div>
+                    <!--Bootstrap grid-->
+                    <div class="col-md-4 col-lg-4 p-0">
+                        <a class="gLake" href="common/attractions.html#gLake">
+                            <img src="https://source.unsplash.com/collection/190726/1500x900" class="img-fluid" alt="Guinness Lake">
+                        </a>
+                    </div>
+                 </div> <!--row-->
+            </div><!--container attractions-gallery-->
 
-              <!--Bootstrap Row-->
-              <div class="row" id="attractions-gallery">
-                  <!--Bootstrap grid-->
-                <div class="col-md-3 p-0">
-                    <a class="gForce" href="common/attractions.html#gForce"><img class="w-100" src="img/pintman.png"></a>
-                </div>
-                <div class="col-md-3 p-0">
+
+            <!--Bootstrap container-->
+            <div class="container" id="attractions-gallery">
+                <!--Bootstrap row-->
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 p-0">
+                        <a class="pintman" href="common/attractions.html#pintman">
+                            <img src="https://source.unsplash.com/collection/190726/1500x900" class="img-fluid" alt="Pintman Express">
+
+                        </a>
+                    </div>
                     <!--Bootstrap grid-->
-                    <a class="pintman" href="common/attractions.html#arthur"><img class="w-100" src="img/pintman.png"></a>
-                </div>
-                <div class="col-md-3 p-0">
+                    <div class="col-md-4 col-lg-4 p-0">
+                        <a class="fartChamber" href="common/attractions.html#fartChamber">
+                            <img src="https://source.unsplash.com/collection/190726/1500x900" class="img-fluid" alt="Fart Chamber Escape Room">
+                            </a>
+                    </div>
                     <!--Bootstrap grid-->
-                    <a class="pintman" href="common/attractions.html#zoo"><img class="w-100" src="img/pintman.png"></a>
-                </div>
-                <div class="col-md-3 p-0">
-                    <!--Bootstrap grid-->
-                    <a class="pintman" href="common/attractions.html#fartChamber"><img class="w-100" src="img/pintman.png"></a>
-                </div>
-            </div><!--gallery-->
-        </div><!--container-->
+                    <div class="col-md-4 col-lg-4 p-0">
+                        <a class="gLake" href="common/attractions.html#gLake">
+                            <img src="img/zoo.jpg" class="img-fluid" alt="Guinness Lake">
+                        </a>
+                    </div>
+                </div><!--row-->
+            </div><!--container-->
+        </div><!--container galley-wrapper-->
+
+
 
 
 
@@ -166,19 +184,21 @@
                         <!--Bootstrap pricing card-->
                         <div class="card mb-4 rounded-3 shadow-sm border-warning">
                             <div class="card-header py-3  bg-warning border-warning">
-                                <h4 class="my-0 fw-normal">Junior ticket</h4>
+                                <h4 class="my-0 fw-normal text-dark">Junior ticket</h4>
                             </div>
                             <div class="card-body">
                                 <h1 class="card-title pricing-card-title">€ 50<small class="text-muted fw-light"></small></h1>
                                 <p>Children up to 140cm in height</p>
+                                <a href="common/tickets.html">
                                 <button type="button" class="w-100 btn btn-lg btn-warning">Buy ticket</button>
+                                </a>
                             </div><!--card body-->
                         </div><!--card grid-->
                     </div><!--col-->
                     <div class="col">
                         <div class="card mb-4 rounded-3 shadow-sm border-warning">
                             <div class="card-header py-3  bg-warning border-warning">
-                                <h4 class="my-0 fw-normal">Regular ticket</h4>
+                                <h4 class="my-0 fw-normal text-dark">Regular ticket</h4>
                             </div>
                             <div class="card-body">
                                 <h1 class="card-title pricing-card-title">€ 100<small class="text-muted fw-light"></small></h1>
@@ -190,7 +210,7 @@
                     <div class="col">
                         <div class="card mb-4 rounded-3 shadow-sm border-warning">
                             <div class="card-header py-3  bg-warning border-warning">
-                                <h4 class="my-0 fw-normal">Family ticket</h4>
+                                <h4 class="my-0 fw-normal text-dark">Family ticket</h4>
                             </div>
                             <div class="card-body">
                                 <h1 class="card-title pricing-card-title">€ 150<small class="text-muted fw-light"></small></h1>

@@ -6,7 +6,7 @@ html *{
 
 /*Main content background color*/
 main{
-    background-color: #FED523;
+    background-color: #64B8A1;
     margin-top: -25px;
 }
 
@@ -19,12 +19,13 @@ body{
 
 /*Navigation bar styling */
 header{
-    background-color: green;
-    color: white;
+    background-color: #FED523;
     font-size: 16px;
-
 }
 
+.nav-link{
+    color:white;
+}
 
 
 /*Footer styling */
@@ -40,25 +41,31 @@ footer{
     right: 50px;
 }
 
-/*Contact us styling*/
+#gallery-wrapper img{
+    width:600px;
+    height:400px;
+}
+
+/*Heading default styling*/
+h1,h2, h3, h4, h5, h6{
+    color: #D20001;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Contact us page styling*/
 #contact-heading h2{
     padding: 30px;
 
 }
+#contact-content{
+    padding-bottom: 50px;
 
-/*Titles fonts*/
-
-h1 {
-    color: #D20001 ;
-    text-align: center;
 }
 
-h2{
-    color: #F26400;
-    text-align: center;
+.send-message{
+    padding-top: 20px;
 }
-
-/*Header style*/
 
 #top-title{
     /*background-color: rgba(100, 184, 161, 0.58);*/

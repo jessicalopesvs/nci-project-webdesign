@@ -40,11 +40,12 @@
 
         <!--Botstrap nav-pills-->
         <ul class="nav nav-pills">
-            <li class="nav-item "><a href="" class="nav-link text-warning">Atttractions</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-warning">About us</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-warning">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-warning">Contact Us</a></li>
-            <li class="nav-item"><a href="common/tickets.html" class="nav-link active nav-warning" aria-current="page">Tickets</a></li>
+            <li class="nav-item"><a href="../index.html" class="nav-link text-dark">Home</a></li>
+            <li class="nav-item"><a href="attractions.html" class="nav-link text-dark">Atttractions</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link text-dark">About us</a></li>
+            <li class="nav-item"><a href="faqs.html" class="nav-link text-dark">FAQs</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link text-dark">Contact Us</a></li>
+            <li class="nav-item"><a href="tickets.html" class="nav-link text-dark">Tickets</a></li>
         </ul>
     </header>
 
@@ -53,7 +54,7 @@
     <main>
 
         <!--Bootstrap container-->
-        <div class="container">
+        <div class="container" id="contact-content">
             <!--Bootstrap row-->
             <div class="row">
                 <!--Bootstrap grid -->
@@ -63,71 +64,56 @@
                 <!--Bootstrap grid -->
                 <div class="contact-wrapper col-md-6">
                     <h3>Contact form </h3>
+                    <!--Bootstrap form-->
                     <form id="contactForm" name="contactForm">
-                        
                         <!--Name-->
                         <!--Bootstrap grid -->
                         <div class="col-md-12">
                             <!--Bootstrap form-->
-                            <div class="form-group">
-                                <label class="label" for="name">Full Name</label>
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Full Name" required>
-                            </div>
+                            <label class="label-form" for="name">Full Name</label>
+                             <input type="text" class="form-control" name="name" id="name" placeholder="Full Name" required>
                         </div>
 
                         <!--Email-->
                         <!--Bootstrap grid -->
                         <div class="col-md-12">
-                            <!--Bootstrap form-->
-                            <div class="form-group">
-                                <label class="label" for="email">Email Address</label>
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-                            </div>
+                            <label class="label-form" for="email">Email Address</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                         </div>
 
                         <!--Subject-->
                         <!--Bootstrap grid -->
                         <div class="col-md-12">
                             <!--Bootstrap form-->
-                            <div class="form-group">
-                                <label class="label" for="subject">Subject</label>
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
+                            <label class="label-form" for="subject">Subject</label>
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                         </div>
 
                         <!--Message-->
                         <!--Bootstrap grid -->
                         <div class="col-md-12">
                             <!--Bootstrap form-->
-                            <div class="form-group">
-                                <label class="label" for="#">Message</label>
-                                <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message" required></textarea>
-                            </div>
-                        </div>
-                                                
-                        <!--Submit button-->
-                        <!--Bootstrap grid -->
-                        <div class="col-md-12">
-                            <!--Bootstrap form-->
-                            <div class="form-group">
-                                <input type="submit" value="Send Message" class="btn btn-warning">
-                                <div class="submit"></div>
-                            </div>
+                                <label class="label-form" for="message">Message</label>
+                                <textarea name="message" class="form-control" id="message" cols="30" rows="5" placeholder="Message" required></textarea>
                         </div>
 
+                        <!--Submit button-->
+                        <div class="col-md-12 py-2">
+                        <button class="btn btn-warning" type="submit" id="send-message">Send Message</button>
+                        </div>
                     </form>
-                </div><!--form-wrapper-->
+                </div><!--contact wrapper-->
 
                 <!--Google maps-->
                 <!--Bootstrap grid -->
+                    
                 <div class="col-md-6">
                     <div id="gMaps">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2024.9678867901985!2d-6.460101720228864!3d53.54537576131236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48676a949ad1dbf9%3A0x2be202d1e104a45c!2sTayto%20Park!5e1!3m2!1sen!2sie!4v1649929433356!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
                     </div>
                 </div>
-
             </div><!--row-->
-        </div><!--container-->
+         </div><!--container-->
     </main>
 
 
